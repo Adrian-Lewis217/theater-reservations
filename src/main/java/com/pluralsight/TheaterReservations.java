@@ -1,6 +1,7 @@
 package com.pluralsight;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class TheaterReservations {
@@ -20,9 +21,12 @@ public class TheaterReservations {
         String firstName = fullName.substring(0, spaceIndex);
         fullName = fullName.substring(spaceIndex).trim();
         String lastName = fullName.substring(0);
+        System.out.println(lastName + ", " + firstName);
 
         //Date format
-        LocalDate movieDate = LocalDate.parse(date);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        LocalDate movieDate = LocalDate.parse(date, formatter);
+
         System.out.println(movieDate);
 
         input.close();
