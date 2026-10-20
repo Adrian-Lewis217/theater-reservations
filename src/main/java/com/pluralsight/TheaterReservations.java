@@ -8,8 +8,18 @@ public class TheaterReservations {
         Scanner input = new Scanner(System.in);
 
         //Variables
+        System.out.print("Enter your full name: ");
         String fullName = input.nextLine();
+        System.out.print("Enter the date of movie: ");
         String movieDate = input.nextLine();
+        System.out.print("Enter number of ticket(s): ");
         int ticket = input.nextInt();
+
+        // Variables for name for print
+        int spaceIndex = fullName.indexOf(" ");
+        String firstName = fullName.substring(0, spaceIndex);
+        fullName = fullName.substring(spaceIndex).trim();
+        String lastName = fullName.substring(0);
+
     }
 }
