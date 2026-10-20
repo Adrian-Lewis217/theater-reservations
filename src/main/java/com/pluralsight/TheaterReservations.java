@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
@@ -29,11 +30,15 @@ public class TheaterReservations {
         System.out.println(movieDate);
 
         // If statement for tickets
+        String ticketAmount;
         if(ticket > 1){
             String ticketsAmounts = "Tickets";
         } else {
             String ticketsAmount = "Ticket";
         }
+
+
+        System.out.println(ticket + ticketAmount +);
 
         input.close();
 
