@@ -9,6 +9,7 @@ public class TheaterReservations {
 
         //Variables
         String fullName = input.nextLine();
-        LocalDate movieDate =
+        String movieDate = input.nextLine();
+        int ticket = input.nextInt();
     }
 }
