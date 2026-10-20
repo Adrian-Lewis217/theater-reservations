@@ -26,8 +26,14 @@ public class TheaterReservations {
         //Date format
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         LocalDate movieDate = LocalDate.parse(date, formatter);
-
         System.out.println(movieDate);
+
+        // If statement for tickets
+        if(ticket > 1){
+            String ticketsAmounts = "Tickets";
+        } else {
+            String ticketsAmount = "Ticket";
+        }
 
         input.close();
 
