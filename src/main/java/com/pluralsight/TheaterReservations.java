@@ -11,7 +11,7 @@ public class TheaterReservations {
         System.out.print("Enter your full name: ");
         String fullName = input.nextLine();
         System.out.print("Enter the date of movie: ");
-        String movieDate = input.nextLine();
+        String date = input.nextLine();
         System.out.print("Enter number of ticket(s): ");
         int ticket = input.nextInt();
 
@@ -20,6 +20,12 @@ public class TheaterReservations {
         String firstName = fullName.substring(0, spaceIndex);
         fullName = fullName.substring(spaceIndex).trim();
         String lastName = fullName.substring(0);
+
+        //Date format
+        LocalDate movieDate = LocalDate.parse(date);
+        System.out.println(movieDate);
+
+        input.close();
 
     }
 }
